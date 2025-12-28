@@ -57,6 +57,7 @@
                     <div class="card"><i class="fa-solid fa-database"> MySQL</i></div>
                     <div class="card"><i class="fa-brands fa-bootstrap"> Bootstrap</i></div>
                     <div class="card"><i class="fa-brands fa-figma"> Figma</i></div>
+                    <div class="card"><i class="fa-brands fa-trello"> Trello</i></div>
 
                 </div>
                 <div aria-hidden class="group">
@@ -67,6 +68,7 @@
                     <div class="card"><i class="fa-solid fa-database"> MySQL</i></div>
                     <div class="card"><i class="fa-brands fa-bootstrap"> Bootstrap</i></div>
                     <div class="card"><i class="fa-brands fa-figma"> Figma</i></div>
+                    <div class="card"><i class="fa-brands fa-trello"> Trello</i></div>
                 </div>
                 <div aria-hidden class="group">
                     <div class="card"><i class="fa-brands fa-html5"> HTML</i></div>
@@ -76,6 +78,7 @@
                     <div class="card"><i class="fa-solid fa-database"> MySQL</i></div>
                     <div class="card"><i class="fa-brands fa-bootstrap"> Bootstrap</i></div>
                     <div class="card"><i class="fa-brands fa-figma"> Figma</i></div>
+                    <div class="card"><i class="fa-brands fa-trello"> Trello</i></div>
                 </div>
             </div>
         </section>
