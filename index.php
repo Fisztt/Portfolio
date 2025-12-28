@@ -42,8 +42,8 @@
         <!-- ABOUT -->
         <section id="about" class="container">
             <h3>Experiences</h3>
-            <p>2023 - Present: Student at VТS University of Subotica, Serbia
-            </p>
+            <p>2019 - 2023: Learned web development basics through online courses and personal projects. </p>
+            <p>2023 - Present: Student at VТS University of Subotica, Serbia</p>
         </section>
         <!-- SKILLS -->
         <section id="skills" class="container">
