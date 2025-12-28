@@ -1,0 +1,224 @@
+:root {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #38bdf8;
+  --card: #ffffff;
+  --sidebar-bg: rgb(44, 38, 38);
+}
+
+body.dark {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --card: #020617;
+  --sidebar-bg: #080b14;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: var(--sidebar-bg);
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.sidebar li {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.sidebar a:hover {
+  color: var(--primary);
+}
+
+.theme-btn {
+  background: none;
+  border: 1px solid var(--muted);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  margin-left: 200px; /* sidebar szélessége */
+  padding: 2rem;
+}
+
+/* HERO */
+.hero-img {
+  width: 200px; /* vagy amit szeretnél */
+  height: 200px; /* ugyanakkora, mint a width! */
+  border-radius: 50%;
+  object-fit: cover; /* a kép arányosan kitölti a kört */
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    width: 100px; /* fix méret */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+}
+.hero h2 {
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 4rem; /* 4 rem = kb. 64px, tetszés szerint növelheted */
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+.carousel {
+  margin: 10px auto;
+  width: 100%;
+  height: 50px;
+  border: 5px solid var(--bg);
+  display: flex;
+  overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  animation: spin 10s linear infinite;
+  padding-right: 1em;
+}
+.card {
+  flex: 0 0 9em;
+  height: 1em;
+  padding: 1em;
+  background: cornflowerblue;
+  font-size: 1rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+/* BUTTON */
+.btn-main {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+.btn-main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+}
+
+/* RESZPONZÍV MOBIL */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .hero-img {
+    max-width: 250px;
+    margin: 0 auto 1rem;
+  }
+
+  .hero .row {
+    flex-direction: column;
+  }
+}
+.footer {
+  border-top: gray 5px solid;
+  background: var(--bg);
+  color: var(--text);
+  padding: 2rem 0;
+  text-align: center;
+}
+body.dark .footer {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.footer a {
+  color: var(--text);
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: var(--primary);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
