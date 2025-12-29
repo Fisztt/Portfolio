@@ -21,6 +21,17 @@ body {
   font-family: system-ui, sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
   margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 
 /* SIDEBAR */
